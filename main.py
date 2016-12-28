@@ -9,6 +9,8 @@ def main():
     wHeight = 600
 
     WHITE = (255, 255, 255)
+    anne = pygame.image.load("sprites/Anne_01.png")
+    annex4 = pygame.image.load("sprites/Anne_01_x4.png")
     staffan = pygame.image.load("staffan.jpg")
     staffanX = 1
     staffanY = 1
@@ -51,7 +53,7 @@ def main():
             staffanY +=  ySpeed * dT
 
 
-        DISPLAYSURF.blit(staffan, (staffanX, staffanY))
+        DISPLAYSURF.blit(annex4, (staffanX, staffanY))
 
         pygame.display.flip()
 
